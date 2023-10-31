@@ -1,0 +1,11 @@
+<div style="background-color: antiquewhite; border: 2px solid black">
+  <h1>Hello, this your teacher Rym</h1>
+  <h2>please respond to the following question: {{ question }}</h2>
+  <app-student
+    [questionStudent]="question"
+    (finalStudentAnswer)="correction($event)"
+  >
+  </app-student>
+  <h2>Teacher response :</h2>
+  <h3>{{ message }}</h3>
+</div>
